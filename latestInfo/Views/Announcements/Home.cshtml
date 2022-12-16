@@ -1,0 +1,29 @@
+﻿
+
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Notices</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Latest Happenings</th>
+            </tr>
+            <tr>
+                <td>@Html.ActionLink("news", "Index", "Announcements")</td>
+            </tr>
+            <tr>
+                <td>@Html.ActionLink("Time Table", "TimeTable", "Announcements")</td>
+            </tr>
+            <tr>
+                <td>@Html.ActionLink("Holidays", "Holidays", "Announcements")</td>
+            </tr>
+            <tr>
+                <td>@Html.ActionLink("Calendar", "Calendar", "Announcements")</td>
+            </tr>
+        </thead>
+</div>
